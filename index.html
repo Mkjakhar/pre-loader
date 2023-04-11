@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-loading</title>
+    <style>
+      .pre-loader {
+        min-height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .pre-loader h2 {
+        font-size: 44px;
+        color: white;
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="overflow-hidden">
+    <div class="pre-loader">
+      <!-- You can add anything you want (any type of aniamtion) in preloading hrer -->
+      <h2>Loading...</h2>
+    </div>
+    <div style="max-width: 1320px; margin: 0 auto">
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        aperiam ratione esse fuga nulla atque! Id eius sit error numquam vero
+        quibusdam porro odio. In porro facilis sed quia at ipsum nesciunt ea.
+        Non odio commodi ducimus veniam ex architecto. Facere molestiae deleniti
+        ipsa doloribus, excepturi corrupti accusantium eos provident.
+        Laboriosam, provident doloribus? Animi quas quasi facere tenetur.
+        Adipisci illum assumenda rem deleniti tempore ullam ab? Reprehenderit
+        rem reiciendis fugit voluptatum eius sapiente repellat laboriosam
+        doloremque facere, officiis, corrupti molestiae perferendis velit et sit
+        accusantium nostrum praesentium laborum tempora quam voluptates
+        temporibus iste excepturi atque? Mollitia rem quis dolores voluptas
+        voluptatibus voluptate quaerat facere accusantium expedita magnam. Quia
+        veniam numquam id beatae corrupti quasi dolores ducimus voluptatibus
+        reprehenderit enim distinctio, ea blanditiis asperiores nisi ad a, sed
+        dignissimos, odio ipsam adipisci perspiciatis dolorem nesciunt.
+        Praesentium facere, architecto odio debitis error in, corrupti vero odit
+        laborum eaque eveniet hic, dolore totam? Assumenda, facere, inventore
+        optio repudiandae quidem in animi aut, accusamus impedit odio quo. Sint
+        ratione delectus ipsam quos odio ad consequuntur obcaecati libero! Quam
+        aperiam sunt nisi? Pariatur quos nulla saepe at vero mollitia animi non
+        perspiciatis optio laborum, fugiat quia nobis provident id aliquid porro
+        reprehenderit sunt? Nam, at?
+      </h1>
+    </div>
+    <script>
+      setTimeout(() => {
+        document.querySelector(".pre-loader").style.display = "none";
+        document.body.classList.remove("overflow-hidden");
+      }, 2500);
+    </script>
+  </body>
+</html>
